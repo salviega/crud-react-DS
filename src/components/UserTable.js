@@ -11,7 +11,8 @@ const UserTable = ({users, deleteUser, editRow}) => {
           </tr>
         </thead>
         <tbody>
-            {   users.length > 0 ?
+            {   
+                users.length > 0 ?
                 users.map(user => {
                     return (
                     <tr key={user.id}>
