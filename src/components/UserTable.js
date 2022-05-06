@@ -18,13 +18,14 @@ const UserTable = ({users, deleteUser, editRow}) => {
                         <td>{user.name}</td>
                         <td>{user.username}</td>
                         <td>
-                            <button 
-                                className="button muted-button"
+                            <button
+                                className="btn btn-warning"
                                 onClick={() => editRow(user)} >
                                 Edit
                             </button>
+                            {'     '}
                             <button 
-                                className="button muted-button"
+                                className="btn btn-danger"
                                 onClick= {() => deleteUser(user.id)} >
                                 Delete
                             </button>

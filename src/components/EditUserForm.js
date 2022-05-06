@@ -41,6 +41,7 @@ const EditUserForm = ({currentUser, updateUser}) => {
             } />
             <p>{errors.username?.message}</p>
         <button 
+            className="btn btn-primary"
             type="submit">Edit new user</button>
       </form>
      );

@@ -16,12 +16,15 @@ function App() {
   const [users, setUsers] = useState(usersData)
 
   const addUser = (user) => {
-    user.id = uuidv4()
-    console.log(user)
-    setUsers([
+    if (users[users.length - 1].name !== user.name && users[users.length - 1].username !== user.username) {
+      user.id = uuidv4()
+      setUsers([
       ...users,
       user
-    ])
+      ])
+    } else {
+      alert("Debe ingresar un nuevo usuario")
+    }     
   }
 
   // Eliminar usuario
@@ -67,7 +70,7 @@ function App() {
         )}
       </div>
         <div className="flex-large">
-          <h2>View users</h2>
+          <h2>View users ({users.length})</h2>
           <UserTable users={users} deleteUser={deleteUser} editRow={editRow} />
         </div>
       </div>
@@ -76,3 +79,4 @@ function App() {
 }
 
 export default App;
+
