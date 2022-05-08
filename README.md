@@ -1,6 +1,8 @@
 # Desarrollo de Software: 
 Fund. de ReactJS - verificación de conocimientos
 
+Vídeo explicativo: https://www.youtube.com/watch?v=31t2n4dG0Xo
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
